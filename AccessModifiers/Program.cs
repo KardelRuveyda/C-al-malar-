@@ -28,6 +28,8 @@ namespace AccessModifiers
         {
             Customer customer = new Customer();
             //ID Protected çağrıldı.
+
+
             //private ise çağıramam.
         }
     }
