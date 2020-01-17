@@ -10,7 +10,7 @@ namespace RecapDemo2
     {
         static void Main(string[] args)
         {
-            //DatabaseLogger databaseLogger = new DatabaseLogger(); //Yanlış
+            //DatabaseLogger databaseLogger = new DatabaseLogger(); //Yanlış  
 
             CustomerManager customerManager = new CustomerManager();
             //customerManager.logger = new DatabaseLogger();
