@@ -29,7 +29,7 @@ namespace RecapDemo2
         {
             logger.Log();
             Console.WriteLine("Customer Added.");
-
+   
             //Loglama işlemi yapılmak isteniyor. Hangi kullanıcı tarafından eklendi ? 
 
         }
