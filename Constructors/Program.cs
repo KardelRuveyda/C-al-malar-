@@ -35,4 +35,17 @@ namespace Constructors
         }
 
     }
+
+    interface ILogger
+    {
+        void Log();
+    }
+
+    class DatabaseLogger: ILogger
+    {
+       public void Log()
+        {
+            Console.Writeline("Logged the database;");
+        }
+    }
 }
