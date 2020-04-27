@@ -11,9 +11,12 @@ namespace VirtualMethod
         static void Main(string[] args)
         {
             SqlServer server = new SqlServer();
-            server.Add();
 
+            server.Add();
             MySql mySql = new MySql();
+
+            mySql.Add();
+
 
             Console.ReadLine();
         }

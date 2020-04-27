@@ -12,11 +12,12 @@ namespace RecapDemo2
         {
             //DatabaseLogger databaseLogger = new DatabaseLogger(); //Yanlış  
 
-            CustomerManager customerManager = new CustomerManager();
-            //customerManager.logger = new DatabaseLogger();
-            customerManager.logger = new SmsLogger();
 
-            customerManager.Add();
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.logger = new SmsLogger();
+            customerManager.logger = new FileLogger();
+            customerManager.logger = new DatabaseLogger();
+
 
             Console.ReadLine();
         }

@@ -22,7 +22,7 @@ namespace AccessModifiers
 
     }
 
-    class Student:Customer
+    class Student : Customer
     {
         public void Save()
         {
@@ -35,4 +35,11 @@ namespace AccessModifiers
     }
 
 
+    public class School
+    {
+        public void AddStudent()
+        {
+            Console.WriteLine("Student Added;");
+        }
+    }
 }

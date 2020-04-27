@@ -7,30 +7,23 @@ namespace ReferencesAndValueTypes
     {
         static void Main(string[] args)
         {
-            int number1 = 30;
+            int number1 = 10;
             int number2 = 20;
 
             number2 = number1;
+            number1 = 30;
 
-            Console.WriteLine(number2);
-            Console.ReadLine();
+            string[] cities = new string[] { "Ankara", "Aadana" };
+            string[] cities2 = new string[] { "Trabzon", "İstanbul" };
 
-            string[] cities1 = new string[] { "Ankara", "Adana", "İstanbul" };
-            string[] cities2 = new string[] { "Bursa", "Bolus", "Balıkesir" };
+            cities2=cities;
 
-            cities2 = cities1;
-
-            cities1[0] = "İstanbul";
+            cities[0] = "İstanbul";
 
             Console.WriteLine(cities2[0]);
 
             Console.ReadLine();
 
-            DataTable dataTable;
-
-            DataTable dataTable1 = new DataTable();
-
-            dataTable = dataTable1;
 
 
 

@@ -9,6 +9,8 @@ namespace Constructors
             CustomerManager customer = new CustomerManager(10);
             customer.List();
 
+            Product product = new Product(2, "Computer");
+
             Console.ReadLine();
         }
     }
@@ -47,5 +49,25 @@ namespace Constructors
         {
             Console.Writeline("Logged the database;");
         }
+    }
+
+    class Product
+    {
+
+        public Product()
+        {
+
+        }
+
+        private int _id;
+        private string _name;
+        public Product(int id, string name)
+        {
+            id = _id;
+            name = _name;
+        }
+
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
