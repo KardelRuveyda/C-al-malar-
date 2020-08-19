@@ -47,7 +47,7 @@ namespace Constructors
     {
        public void Log()
         {
-            Console.Writeline("Logged the database;");
+            Console.WriteLine("Logged the database;");
         }
     }
 

@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiersDemo", "Acce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMethods", "StaticMethods\StaticMethods.csproj", "{F6BB2BDA-60A2-4566-ACE6-BD9A5EB36613}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{F6BB2BDA-60A2-4566-ACE6-BD9A5EB36613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6BB2BDA-60A2-4566-ACE6-BD9A5EB36613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6BB2BDA-60A2-4566-ACE6-BD9A5EB36613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
