@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMethods", "StaticMeth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOnet", "ADOnet\ADOnet.csproj", "{D4D6BEC1-A1A3-4013-AE63-44AE288304D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8829435F-ECFE-4E92-ABFD-CADAC91CFF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D6BEC1-A1A3-4013-AE63-44AE288304D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D6BEC1-A1A3-4013-AE63-44AE288304D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D6BEC1-A1A3-4013-AE63-44AE288304D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D6BEC1-A1A3-4013-AE63-44AE288304D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
