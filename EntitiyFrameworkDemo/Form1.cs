@@ -37,6 +37,13 @@ namespace EntitiyFrameworkDemo
             dgwProducts.DataSource = _productDal.GetAll();
 
         }
+        private void SearchProducts(string key)
+        {
+
+            dgwProducts.DataSource = _productDal.GetAll().Where(p=> p.Name.Contains(key)).ToList();
+
+        }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -82,6 +89,11 @@ namespace EntitiyFrameworkDemo
 
             LoadProducts();
             MessageBox.Show("Silindi.");
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(txtSearch.Text);
         }
     }
 }

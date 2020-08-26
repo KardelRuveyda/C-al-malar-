@@ -46,6 +46,8 @@
             this.gbxAdd = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgwProducts = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.gbxUpdate.SuspendLayout();
             this.gbxAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
@@ -53,7 +55,7 @@
             // 
             // RemoveBtn
             // 
-            this.RemoveBtn.Location = new System.Drawing.Point(856, 19);
+            this.RemoveBtn.Location = new System.Drawing.Point(38, 19);
             this.RemoveBtn.Name = "RemoveBtn";
             this.RemoveBtn.Size = new System.Drawing.Size(120, 36);
             this.RemoveBtn.TabIndex = 15;
@@ -238,11 +240,30 @@
             this.dgwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellClick);
             this.dgwProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellContentClick);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(887, 26);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 22);
+            this.txtSearch.TabIndex = 16;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(823, 29);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(53, 17);
+            this.lblSearch.TabIndex = 17;
+            this.lblSearch.Text = "Search";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1090, 636);
+            this.Controls.Add(this.lblSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.gbxUpdate);
             this.Controls.Add(this.gbxAdd);
@@ -256,6 +277,7 @@
             this.gbxAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -279,6 +301,8 @@
         private System.Windows.Forms.GroupBox gbxAdd;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgwProducts;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label lblSearch;
     }
 }
 
