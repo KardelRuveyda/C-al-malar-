@@ -86,5 +86,14 @@ namespace ADOnet
             LoadProducts();
             MessageBox.Show("Güncellendi.");
         }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value.ToString());
+
+            _productDal.Delete(id);
+            LoadProducts();
+            MessageBox.Show("Silindi.");
+        }
     }
 }

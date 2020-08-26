@@ -93,5 +93,18 @@ namespace ADOnet
 
             _sqlConnection.Close();
         }
+
+        public void Delete(int id)
+        {
+            ConnectionControl();
+            SqlCommand sqlCommand = new SqlCommand("DELETE FROM Products Where Id = @id", _sqlConnection);
+
+            sqlCommand.Parameters.AddWithValue("@id", id);
+ 
+
+            sqlCommand.ExecuteNonQuery();
+
+            _sqlConnection.Close();
+        }
     }
 }
