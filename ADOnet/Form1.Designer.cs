@@ -37,8 +37,17 @@
             this.lblUnitPrice = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.gbxUpdate = new System.Windows.Forms.GroupBox();
+            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.txtStockAmountUpdate = new System.Windows.Forms.TextBox();
+            this.txtUnitPriceUpdate = new System.Windows.Forms.TextBox();
+            this.txtNameUpdate = new System.Windows.Forms.TextBox();
+            this.lblStockAmountUpdate = new System.Windows.Forms.Label();
+            this.lblUnitPriceUpdate = new System.Windows.Forms.Label();
+            this.lblNameUpdate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
             this.gbxAdd.SuspendLayout();
+            this.gbxUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgwProducts
@@ -51,6 +60,7 @@
             this.dgwProducts.RowTemplate.Height = 24;
             this.dgwProducts.Size = new System.Drawing.Size(949, 290);
             this.dgwProducts.TabIndex = 0;
+            this.dgwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellClick);
             this.dgwProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // gbxAdd
@@ -129,7 +139,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(221, 185);
+            this.btnAdd.Location = new System.Drawing.Point(221, 184);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(90, 40);
             this.btnAdd.TabIndex = 13;
@@ -137,21 +147,107 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // gbxUpdate
+            // 
+            this.gbxUpdate.Controls.Add(this.UpdateBtn);
+            this.gbxUpdate.Controls.Add(this.txtStockAmountUpdate);
+            this.gbxUpdate.Controls.Add(this.txtUnitPriceUpdate);
+            this.gbxUpdate.Controls.Add(this.txtNameUpdate);
+            this.gbxUpdate.Controls.Add(this.lblStockAmountUpdate);
+            this.gbxUpdate.Controls.Add(this.lblUnitPriceUpdate);
+            this.gbxUpdate.Controls.Add(this.lblNameUpdate);
+            this.gbxUpdate.Location = new System.Drawing.Point(574, 354);
+            this.gbxUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxUpdate.Name = "gbxUpdate";
+            this.gbxUpdate.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxUpdate.Size = new System.Drawing.Size(500, 246);
+            this.gbxUpdate.TabIndex = 8;
+            this.gbxUpdate.TabStop = false;
+            this.gbxUpdate.Text = "Update a product";
+            this.gbxUpdate.Enter += new System.EventHandler(this.groupBox1_Enter_2);
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.Location = new System.Drawing.Point(221, 184);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(90, 40);
+            this.UpdateBtn.TabIndex = 13;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
+            // txtStockAmountUpdate
+            // 
+            this.txtStockAmountUpdate.Location = new System.Drawing.Point(175, 140);
+            this.txtStockAmountUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStockAmountUpdate.Name = "txtStockAmountUpdate";
+            this.txtStockAmountUpdate.Size = new System.Drawing.Size(136, 28);
+            this.txtStockAmountUpdate.TabIndex = 12;
+            // 
+            // txtUnitPriceUpdate
+            // 
+            this.txtUnitPriceUpdate.Location = new System.Drawing.Point(175, 95);
+            this.txtUnitPriceUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUnitPriceUpdate.Name = "txtUnitPriceUpdate";
+            this.txtUnitPriceUpdate.Size = new System.Drawing.Size(136, 28);
+            this.txtUnitPriceUpdate.TabIndex = 11;
+            // 
+            // txtNameUpdate
+            // 
+            this.txtNameUpdate.Location = new System.Drawing.Point(175, 55);
+            this.txtNameUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNameUpdate.Name = "txtNameUpdate";
+            this.txtNameUpdate.Size = new System.Drawing.Size(136, 28);
+            this.txtNameUpdate.TabIndex = 10;
+            // 
+            // lblStockAmountUpdate
+            // 
+            this.lblStockAmountUpdate.AutoSize = true;
+            this.lblStockAmountUpdate.Location = new System.Drawing.Point(36, 140);
+            this.lblStockAmountUpdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStockAmountUpdate.Name = "lblStockAmountUpdate";
+            this.lblStockAmountUpdate.Size = new System.Drawing.Size(131, 21);
+            this.lblStockAmountUpdate.TabIndex = 9;
+            this.lblStockAmountUpdate.Text = "Stock Amount";
+            // 
+            // lblUnitPriceUpdate
+            // 
+            this.lblUnitPriceUpdate.AutoSize = true;
+            this.lblUnitPriceUpdate.Location = new System.Drawing.Point(36, 102);
+            this.lblUnitPriceUpdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUnitPriceUpdate.Name = "lblUnitPriceUpdate";
+            this.lblUnitPriceUpdate.Size = new System.Drawing.Size(93, 21);
+            this.lblUnitPriceUpdate.TabIndex = 8;
+            this.lblUnitPriceUpdate.Text = "Unit Price";
+            // 
+            // lblNameUpdate
+            // 
+            this.lblNameUpdate.AutoSize = true;
+            this.lblNameUpdate.Location = new System.Drawing.Point(36, 58);
+            this.lblNameUpdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNameUpdate.Name = "lblNameUpdate";
+            this.lblNameUpdate.Size = new System.Drawing.Size(59, 21);
+            this.lblNameUpdate.TabIndex = 7;
+            this.lblNameUpdate.Text = "Name";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 625);
+            this.Controls.Add(this.gbxUpdate);
             this.Controls.Add(this.gbxAdd);
             this.Controls.Add(this.dgwProducts);
             this.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "v";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).EndInit();
             this.gbxAdd.ResumeLayout(false);
             this.gbxAdd.PerformLayout();
+            this.gbxUpdate.ResumeLayout(false);
+            this.gbxUpdate.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -167,6 +263,14 @@
         private System.Windows.Forms.Label lblUnitPrice;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.GroupBox gbxUpdate;
+        private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.TextBox txtStockAmountUpdate;
+        private System.Windows.Forms.TextBox txtUnitPriceUpdate;
+        private System.Windows.Forms.TextBox txtNameUpdate;
+        private System.Windows.Forms.Label lblStockAmountUpdate;
+        private System.Windows.Forms.Label lblUnitPriceUpdate;
+        private System.Windows.Forms.Label lblNameUpdate;
     }
 }
 

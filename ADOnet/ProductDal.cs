@@ -78,5 +78,20 @@ namespace ADOnet
 
             _sqlConnection.Close();
         }
+
+        public void Update(Product product)
+        {
+            ConnectionControl();
+            SqlCommand sqlCommand = new SqlCommand("update Products set Name= @name, UnitPrice = @unitPrice, StockAmount = @stockAmount where  Id = @id", _sqlConnection);
+
+            sqlCommand.Parameters.AddWithValue("@name", product.Name);
+            sqlCommand.Parameters.AddWithValue("@unitPrice", product.UnitPrice);
+            sqlCommand.Parameters.AddWithValue("@stockAmount", product.StockAmount);
+            sqlCommand.Parameters.AddWithValue("@id", product.Id);
+
+            sqlCommand.ExecuteNonQuery();
+
+            _sqlConnection.Close();
+        }
     }
 }
