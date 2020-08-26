@@ -95,5 +95,65 @@ namespace ADOnet
             LoadProducts();
             MessageBox.Show("Silindi.");
         }
+
+        private void tbxStockAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxUnitPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStockAmount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStockAmountUpdate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUnitPriceUpdate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNameUpdate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStockAmountUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUnitPriceUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNameUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

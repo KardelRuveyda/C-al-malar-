@@ -91,6 +91,7 @@
             this.tbxStockAmount.Name = "tbxStockAmount";
             this.tbxStockAmount.Size = new System.Drawing.Size(136, 28);
             this.tbxStockAmount.TabIndex = 12;
+            this.tbxStockAmount.TextChanged += new System.EventHandler(this.tbxStockAmount_TextChanged);
             // 
             // tbxUnitPrice
             // 
@@ -99,6 +100,7 @@
             this.tbxUnitPrice.Name = "tbxUnitPrice";
             this.tbxUnitPrice.Size = new System.Drawing.Size(136, 28);
             this.tbxUnitPrice.TabIndex = 11;
+            this.tbxUnitPrice.TextChanged += new System.EventHandler(this.tbxUnitPrice_TextChanged);
             // 
             // tbxName
             // 
@@ -107,6 +109,7 @@
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(136, 28);
             this.tbxName.TabIndex = 10;
+            this.tbxName.TextChanged += new System.EventHandler(this.tbxName_TextChanged);
             // 
             // lblStockAmount
             // 
@@ -117,6 +120,7 @@
             this.lblStockAmount.Size = new System.Drawing.Size(131, 21);
             this.lblStockAmount.TabIndex = 9;
             this.lblStockAmount.Text = "Stock Amount";
+            this.lblStockAmount.Click += new System.EventHandler(this.lblStockAmount_Click);
             // 
             // lblUnitPrice
             // 
@@ -138,6 +142,7 @@
             this.lblName.Size = new System.Drawing.Size(59, 21);
             this.lblName.TabIndex = 7;
             this.lblName.Text = "Name";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // btnAdd
             // 
@@ -185,6 +190,7 @@
             this.txtStockAmountUpdate.Name = "txtStockAmountUpdate";
             this.txtStockAmountUpdate.Size = new System.Drawing.Size(136, 28);
             this.txtStockAmountUpdate.TabIndex = 12;
+            this.txtStockAmountUpdate.TextChanged += new System.EventHandler(this.txtStockAmountUpdate_TextChanged);
             // 
             // txtUnitPriceUpdate
             // 
@@ -193,6 +199,7 @@
             this.txtUnitPriceUpdate.Name = "txtUnitPriceUpdate";
             this.txtUnitPriceUpdate.Size = new System.Drawing.Size(136, 28);
             this.txtUnitPriceUpdate.TabIndex = 11;
+            this.txtUnitPriceUpdate.TextChanged += new System.EventHandler(this.txtUnitPriceUpdate_TextChanged);
             // 
             // txtNameUpdate
             // 
@@ -201,6 +208,7 @@
             this.txtNameUpdate.Name = "txtNameUpdate";
             this.txtNameUpdate.Size = new System.Drawing.Size(136, 28);
             this.txtNameUpdate.TabIndex = 10;
+            this.txtNameUpdate.TextChanged += new System.EventHandler(this.txtNameUpdate_TextChanged);
             // 
             // lblStockAmountUpdate
             // 
@@ -211,6 +219,7 @@
             this.lblStockAmountUpdate.Size = new System.Drawing.Size(131, 21);
             this.lblStockAmountUpdate.TabIndex = 9;
             this.lblStockAmountUpdate.Text = "Stock Amount";
+            this.lblStockAmountUpdate.Click += new System.EventHandler(this.lblStockAmountUpdate_Click);
             // 
             // lblUnitPriceUpdate
             // 
@@ -221,6 +230,7 @@
             this.lblUnitPriceUpdate.Size = new System.Drawing.Size(93, 21);
             this.lblUnitPriceUpdate.TabIndex = 8;
             this.lblUnitPriceUpdate.Text = "Unit Price";
+            this.lblUnitPriceUpdate.Click += new System.EventHandler(this.lblUnitPriceUpdate_Click);
             // 
             // lblNameUpdate
             // 
@@ -231,6 +241,7 @@
             this.lblNameUpdate.Size = new System.Drawing.Size(59, 21);
             this.lblNameUpdate.TabIndex = 7;
             this.lblNameUpdate.Text = "Name";
+            this.lblNameUpdate.Click += new System.EventHandler(this.lblNameUpdate_Click);
             // 
             // button1
             // 
@@ -240,6 +251,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // RemoveBtn
             // 
