@@ -11,9 +11,7 @@ namespace Attributes
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer({
-
-            }
+            Customer customer = new Customer();
     }
         [ToTable("Customers")]
         class Customer
