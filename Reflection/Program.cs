@@ -15,7 +15,7 @@ namespace Reflection
             //Console.WriteLine(dortislem.Topla(2, 3));
             //Console.WriteLine(dortislem.Topla2());
 
-            var tip = typeof(DortIslem);    
+            var tip = typeof(DortIslem);
 
             //DortIslem dortIslem=(DortIslem)Activator.CreateInstance(tip,6,7);
             //Console.WriteLine(dortIslem.Topla(4, 5));
@@ -24,22 +24,37 @@ namespace Reflection
             //method çalıştırılması.
             var instance = Activator.CreateInstance(tip, 6, 7);
 
-            MethodInfo methodInfo= instance.GetType().GetMethod("Topla2");
+            //GetMethod ile ulaş
+            //Invoke ile çalıştır. 
+            MethodInfo methodInfo = instance.GetType().GetMethod("Topla2");
 
             Console.WriteLine(methodInfo.Invoke(instance, null));
 
 
             //sınıfın özelliklerine,attributelerine ulaşmak. 
 
+            //Metodlarına ulaşmak için.
             var metodlar = tip.GetMethods();
 
             foreach (var item in metodlar)
             {
                 Console.WriteLine("Method Adı : {0}", item);
+
+                foreach (var parameterInfo in item.GetParameters())
+                {
+                    Console.WriteLine("Parametre Adı : {0}", parameterInfo.Name); 
+                }
+
+                foreach (var attributeInfo in item.GetCustomAttributes())
+                {
+                    Console.WriteLine("Attribute Adı : {0}", attributeInfo.GetType().Name);
+                }
             }
 
             Console.ReadLine();
+
         }
+
     }
 
     class DortIslem
